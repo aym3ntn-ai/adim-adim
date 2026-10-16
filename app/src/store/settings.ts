@@ -10,6 +10,8 @@ interface SettingsState {
   /** Show the French translation under the dialogue lines. */
   showTranslation: boolean;
   popups: PopupPrefs;
+  /** Web only: pop-ups appear while the site is open, so the pace is in minutes. */
+  webIntervalMinutes: number;
   set: (patch: Partial<Omit<SettingsState, 'set' | 'setPopups'>>) => void;
   setPopups: (patch: Partial<PopupPrefs>) => void;
 }
@@ -26,6 +28,7 @@ export const useSettings = create<SettingsState>()(
         onlySeen: true,
         quiet: [22, 8],
       },
+      webIntervalMinutes: 10,
       set: (patch) => set(patch),
       setPopups: (patch) => set((s) => ({ popups: { ...s.popups, ...patch } })),
     }),

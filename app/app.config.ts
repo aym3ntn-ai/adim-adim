@@ -10,7 +10,7 @@ const config: ExpoConfig = {
   icon: './assets/images/icon.png',
   scheme: 'adimadim',
   userInterfaceStyle: 'automatic',
-  platforms: ['android'],
+  platforms: ['android', 'web'],
   android: {
     package: 'com.aym3ntn.adimadim',
     // Set by CI to the workflow run number so each build can update the previous one.
@@ -25,12 +25,26 @@ const config: ExpoConfig = {
     permissions: ['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.RECEIVE_BOOT_COMPLETED'],
     blockedPermissions: ['android.permission.READ_EXTERNAL_STORAGE', 'android.permission.WRITE_EXTERNAL_STORAGE'],
   },
+  web: {
+    bundler: 'metro',
+    output: 'single',
+    name: 'Adım Adım — turc A1.1',
+    shortName: 'Adım Adım',
+    lang: 'fr',
+    themeColor: '#1F4E8C',
+    backgroundColor: '#F6F3EE',
+  },
   plugins: [
     'expo-router',
     'expo-font',
     ['expo-splash-screen', { backgroundColor: '#1F4E8C', image: './assets/images/splash-icon.png', imageWidth: 96 }],
   ],
-  experiments: { typedRoutes: true, reactCompiler: true },
+  experiments: {
+    typedRoutes: true,
+    reactCompiler: true,
+    // Set by the Pages workflow: the site is served from /adim-adim/.
+    ...(process.env.EXPO_BASE_URL ? { baseUrl: process.env.EXPO_BASE_URL } : {}),
+  },
 };
 
 export default config;

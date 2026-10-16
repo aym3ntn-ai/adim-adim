@@ -1,7 +1,7 @@
 import Constants from 'expo-constants';
 import { Info } from 'lucide-react-native';
 import type { ReactNode } from 'react';
-import { Alert, Switch, View } from 'react-native';
+import { Alert, Platform, Switch, View } from 'react-native';
 import { openOverlaySettings, overlaySupported, showNow } from '../../../modules/revision-overlay';
 import { Screen } from '@/components/Screen';
 import { Segmented } from '@/components/Segmented';
@@ -9,14 +9,19 @@ import { T } from '@/components/T';
 import { Tap } from '@/components/Tap';
 import { popups } from '@/content';
 import type { PopupType } from '@/content/types';
+import { confirmDestructive } from '@/lib/confirm';
 import { useOverlayPermission } from '@/lib/overlay';
 import { POPUP_TYPES, TYPE_LABEL, selectPopups, toNativeItem } from '@/lib/popups';
 import { useProgress } from '@/store/progress';
 import { useSettings, type ThemeChoice } from '@/store/settings';
+import { useWebPopup } from '@/store/webPopup';
 import { TOUCH, radii, space } from '@/theme/tokens';
 import { useTheme } from '@/theme/useTheme';
 
 type Frequency = '480' | '120' | '60';
+type WebFrequency = '5' | '10' | '20';
+
+const WEB = Platform.OS === 'web';
 type Quiet = 'none' | '22-8' | '21-9';
 
 const TYPE_HINT: Record<PopupType, string> = {
@@ -44,16 +49,18 @@ export default function Settings() {
   const granted = useOverlayPermission();
   const opened = useProgress((s) => s.lessons);
   const resetProgress = useProgress((s) => s.reset);
+  const showWebPopup = useWebPopup((s) => s.show);
 
   const setEnabled = (enabled: boolean) => {
     settings.setPopups({ enabled });
-    if (enabled && !granted) askPermission();
+    if (enabled && overlaySupported && !granted) askPermission();
   };
 
   const tryNow = () => {
     const pool = selectPopups(popups, prefs, new Set(Object.keys(opened)));
     const item = pool[Math.floor(Math.random() * pool.length)] ?? popups[0];
     if (!item) return;
+    if (WEB) return showWebPopup(toNativeItem(item));
     if (!granted) return askPermission();
     showNow(toNativeItem(item));
   };
@@ -72,19 +79,19 @@ export default function Settings() {
           <View style={{ flex: 1 }}>
             <T variant="rowTitle">Activer les pop-ups</T>
             <T variant="caption" color={theme.ink3}>
-              Quand l&apos;écran est allumé · 5 secondes
+              {WEB ? 'Pendant que le site est ouvert · 5 secondes' : "Quand l'écran est allumé · 5 secondes"}
             </T>
           </View>
           <Switch
             value={prefs.enabled}
             onValueChange={setEnabled}
-            disabled={!overlaySupported}
+            disabled={!overlaySupported && !WEB}
             accessibilityLabel="Activer les pop-ups"
             trackColor={{ false: theme.line, true: theme.accent }}
             thumbColor={theme.surface}
           />
         </Row>
-        {prefs.enabled && !granted ? (
+        {prefs.enabled && overlaySupported && !granted ? (
           <Tap onPress={openOverlaySettings} label="Autoriser l'affichage par-dessus les autres applis">
             <Row>
               <View style={{ flex: 1 }}>
@@ -102,16 +109,29 @@ export default function Settings() {
           <T variant="caption" color={theme.ink3} style={{ paddingHorizontal: 4 }}>
             Fréquence
           </T>
-          <Segmented<Frequency>
-            value={String(prefs.intervalMinutes) as Frequency}
-            onChange={(v) => settings.setPopups({ intervalMinutes: Number(v) })}
-            options={[
-              { value: '480', label: '3× / jour' },
-              { value: '120', label: 'Toutes les 2 h' },
-              { value: '60', label: 'Toutes les h' },
-            ]}
-            colors={segColors}
-          />
+          {WEB ? (
+            <Segmented<WebFrequency>
+              value={String(settings.webIntervalMinutes) as WebFrequency}
+              onChange={(v) => settings.set({ webIntervalMinutes: Number(v) })}
+              options={[
+                { value: '5', label: '5 min' },
+                { value: '10', label: '10 min' },
+                { value: '20', label: '20 min' },
+              ]}
+              colors={segColors}
+            />
+          ) : (
+            <Segmented<Frequency>
+              value={String(prefs.intervalMinutes) as Frequency}
+              onChange={(v) => settings.setPopups({ intervalMinutes: Number(v) })}
+              options={[
+                { value: '480', label: '3× / jour' },
+                { value: '120', label: 'Toutes les 2 h' },
+                { value: '60', label: 'Toutes les h' },
+              ]}
+              colors={segColors}
+            />
+          )}
           <T variant="caption" color={theme.ink3} style={{ paddingHorizontal: 4, marginTop: 6 }}>
             Heures calmes
           </T>
@@ -163,7 +183,7 @@ export default function Settings() {
         </Row>
         <View style={{ padding: 10 }}>
           <Tap
-            disabled={!overlaySupported}
+            disabled={!overlaySupported && !WEB}
             onPress={tryNow}
             style={{ minHeight: TOUCH + 4, borderRadius: radii.tile, borderWidth: 1, borderColor: theme.line, backgroundColor: theme.bg, alignItems: 'center', justifyContent: 'center' }}>
             <T variant="bodyStrong" color={theme.accent}>
@@ -173,7 +193,15 @@ export default function Settings() {
         </View>
       </Section>
 
-      {!overlaySupported ? (
+      {WEB ? (
+        <View style={{ flexDirection: 'row', gap: 10, marginTop: 14, backgroundColor: theme.accentSoft, borderRadius: radii.card, padding: 14 }}>
+          <Info color={theme.accent} size={20} strokeWidth={2} />
+          <T variant="caption" color={theme.ink2} style={{ flex: 1 }}>
+            Sur le web, les pop-ups apparaissent seulement quand le site est ouvert. Sur iPhone, ajoutez le site à l&apos;écran d&apos;accueil
+            (Safari › Partager › Sur l&apos;écran d&apos;accueil) pour l&apos;utiliser comme une app.
+          </T>
+        </View>
+      ) : !overlaySupported ? (
         <View style={{ flexDirection: 'row', gap: 10, marginTop: 14, backgroundColor: theme.warmSoft, borderRadius: radii.card, padding: 14 }}>
           <Info color={theme.warmInk} size={20} strokeWidth={2} />
           <T variant="caption" color={theme.warmInk} style={{ flex: 1 }}>
@@ -200,10 +228,7 @@ export default function Settings() {
       <Section title="Progression">
         <Tap
           onPress={() =>
-            Alert.alert('Remettre à zéro ?', 'Leçons, cartes et série de jours seront effacées. Cette action est définitive.', [
-              { text: 'Annuler', style: 'cancel' },
-              { text: 'Effacer', style: 'destructive', onPress: resetProgress },
-            ])
+            confirmDestructive('Remettre à zéro ?', 'Leçons, cartes et série de jours seront effacées. Cette action est définitive.', 'Effacer', resetProgress)
           }>
           <Row first>
             <T variant="rowTitle" color={theme.warmInk}>

@@ -7,8 +7,10 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import * as SystemUI from 'expo-system-ui';
 import { useEffect, useState } from 'react';
+import { Platform } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { WebPopup } from '@/components/WebPopup';
 import { useOverlaySync } from '@/lib/overlay';
 import { useProgress } from '@/store/progress';
 import { useSettings } from '@/store/settings';
@@ -74,6 +76,7 @@ export default function RootLayout() {
             <Stack.Screen name="lecon/[id]/dialogue" />
             <Stack.Screen name="lecon/[id]/exercices" options={{ animation: 'slide_from_bottom' }} />
           </Stack>
+          {Platform.OS === 'web' ? <WebPopup /> : null}
         </ThemeProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>

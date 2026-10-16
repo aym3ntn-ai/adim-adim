@@ -1,0 +1,17 @@
+{
+  "name": "Adım Adım — turc A1.1",
+  "short_name": "Adım Adım",
+  "description": "Apprendre le turc niveau A1.1, avec les explications en français.",
+  "lang": "fr",
+  "start_url": "/adim-adim/",
+  "scope": "/adim-adim/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F6F3EE",
+  "theme_color": "#1F4E8C",
+  "icons": [
+    { "src": "/adim-adim/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/adim-adim/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/adim-adim/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

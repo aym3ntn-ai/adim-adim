@@ -1,0 +1,66 @@
+name: Deploy site
+
+# The web version of the same app, for iPhone and computers:
+# https://aym3ntn-ai.github.io/adim-adim/
+# Rebuilt whenever the app code or its lesson content changes.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'app/**'
+      - 'package.json'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deployment finish; queue only the latest push behind it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # No lockfile is committed yet: npm resolves the versions pinned in app/package.json.
+      - run: npm install --no-audit --no-fund
+
+      - name: Check the app
+        run: |
+          npm run typecheck --workspace app
+          npm run lint --workspace app
+          npm test --workspace app
+
+      - name: Build the web app
+        working-directory: app
+        env:
+          EXPO_BASE_URL: /adim-adim
+        run: |
+          npx expo export --platform web
+          # GitHub Pages has no rewrites: unknown paths (a reloaded lesson page)
+          # fall back to 404.html, which boots the same single-page app.
+          cp dist/index.html dist/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
