@@ -1,5 +1,5 @@
 import { X } from 'lucide-react-native';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Animated, Easing, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { popups } from '@/content';
@@ -47,8 +47,9 @@ export function WebPopup() {
   useWebPopupTimer();
   const insets = useSafeAreaInsets();
   const { item, key, hide } = useWebPopup();
-  const enter = useRef(new Animated.Value(0)).current;
-  const drain = useRef(new Animated.Value(1)).current;
+  // Created once and kept in state: the React Compiler forbids reading refs during render.
+  const [enter] = useState(() => new Animated.Value(0));
+  const [drain] = useState(() => new Animated.Value(1));
 
   useEffect(() => {
     if (!item) return;
