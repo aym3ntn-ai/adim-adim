@@ -1,0 +1,1031 @@
+{
+  "meta": {
+    "titre": "Turc A1.1 — Contenu des leçons",
+    "langue_explications": "fr",
+    "langue_cible": "tr",
+    "niveau": "A1.1 (CECRL)",
+    "version": "1.0",
+    "date": "2026-10-16",
+    "auteur": "Aymen Ben Tanfous",
+    "note_source": "Contenu original rédigé pour l'application, aligné sur le programme A1.1 du CECRL suivi par l'Institut Yunus Emre. Aucune transcription des vidéos officielles n'est reproduite. Les vidéos de la chaîne officielle (youtube.com/@yeeorgtr) seront liées par URL dans le champ 'videos' de chaque leçon."
+  },
+  "lecons": [
+    {
+      "id": "L01",
+      "numero": 1,
+      "titre": "L'alphabet et la prononciation",
+      "titre_tr": "Alfabe ve Telaffuz",
+      "objectifs": [
+        "Connaître les 29 lettres de l'alphabet turc",
+        "Prononcer correctement les lettres qui n'existent pas en français",
+        "Comprendre que le turc se lit comme il s'écrit"
+      ],
+      "vocabulaire": [
+        { "tr": "çay", "fr": "thé" },
+        { "tr": "cami", "fr": "mosquée" },
+        { "tr": "dağ", "fr": "montagne" },
+        { "tr": "ılık", "fr": "tiède" },
+        { "tr": "göz", "fr": "œil" },
+        { "tr": "şeker", "fr": "sucre" },
+        { "tr": "gül", "fr": "rose (fleur)" },
+        { "tr": "uzun", "fr": "long" },
+        { "tr": "su", "fr": "eau" },
+        { "tr": "yol", "fr": "route, chemin" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Les 29 lettres",
+          "explication": "L'alphabet turc utilise l'écriture latine : A B C Ç D E F G Ğ H I İ J K L M N O Ö P R S Ş T U Ü V Y Z. Il n'y a pas de Q, W ni X. Chaque lettre se prononce toujours de la même façon, et toutes les lettres se prononcent.",
+          "exemples": []
+        },
+        {
+          "titre": "Les lettres à retenir",
+          "explication": "c se prononce « dj » ; ç se prononce « tch » ; ş se prononce « ch » ; ğ ne se prononce pas, il allonge la voyelle qui le précède ; ı (sans point) est un « i » prononcé sans étirer les lèvres, proche d'un « eu » bref ; i (avec point) est le « i » français ; ö se prononce « eu » ; ü est le « u » français ; u se prononce « ou » ; e est entre « é » et « è » ; g est toujours dur comme dans « gare » ; s est toujours « ss » ; h est aspiré ; r est roulé légèrement.",
+          "exemples": [
+            { "tr": "cami", "fr": "« djami » — mosquée" },
+            { "tr": "çay", "fr": "« tchaï » — thé" },
+            { "tr": "şeker", "fr": "« chéker » — sucre" },
+            { "tr": "dağ", "fr": "« daa » — montagne" },
+            { "tr": "gül", "fr": "« gul » — rose" },
+            { "tr": "uzun", "fr": "« ouzoun » — long" }
+          ]
+        },
+        {
+          "titre": "Majuscules I / İ",
+          "explication": "Attention : la majuscule de ı est I, et la majuscule de i est İ (avec point). Exemple : ılık → ILIK, İstanbul → İSTANBUL.",
+          "exemples": [
+            { "tr": "İstanbul", "fr": "Istanbul" },
+            { "tr": "Işık", "fr": "lumière (prénom aussi)" }
+          ]
+        }
+      ],
+      "dialogue": [],
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Comment se prononce « ç » ?",
+          "options": ["ch", "tch", "dj", "s"],
+          "reponse": "tch"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle lettre allonge la voyelle précédente sans se prononcer ?",
+          "options": ["g", "ğ", "h", "y"],
+          "reponse": "ğ"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Quelle est la majuscule de « i » ?",
+          "options": ["I", "İ"],
+          "reponse": "İ"
+        },
+        {
+          "type": "association",
+          "consigne": "Associez le mot turc à sa prononciation approximative.",
+          "paires": [
+            { "tr": "cami", "fr": "djami" },
+            { "tr": "şeker", "fr": "chéker" },
+            { "tr": "uzun", "fr": "ouzoun" },
+            { "tr": "çay", "fr": "tchaï" }
+          ]
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L02",
+      "numero": 2,
+      "titre": "Saluer et prendre congé",
+      "titre_tr": "Selamlaşma ve Vedalaşma",
+      "objectifs": [
+        "Saluer selon le moment de la journée",
+        "Demander et donner des nouvelles",
+        "Utiliser les formules de politesse de base"
+      ],
+      "vocabulaire": [
+        { "tr": "Merhaba", "fr": "Bonjour / Salut" },
+        { "tr": "Selam", "fr": "Salut" },
+        { "tr": "Günaydın", "fr": "Bonjour (le matin)" },
+        { "tr": "İyi günler", "fr": "Bonne journée" },
+        { "tr": "İyi akşamlar", "fr": "Bonsoir" },
+        { "tr": "İyi geceler", "fr": "Bonne nuit" },
+        { "tr": "Nasılsın?", "fr": "Comment vas-tu ?" },
+        { "tr": "Nasılsınız?", "fr": "Comment allez-vous ?" },
+        { "tr": "İyiyim", "fr": "Je vais bien" },
+        { "tr": "Ben de iyiyim", "fr": "Moi aussi, je vais bien" },
+        { "tr": "Teşekkür ederim", "fr": "Merci" },
+        { "tr": "Teşekkürler", "fr": "Merci (plus familier)" },
+        { "tr": "Rica ederim", "fr": "Je vous en prie" },
+        { "tr": "Lütfen", "fr": "S'il vous plaît" },
+        { "tr": "Özür dilerim", "fr": "Je suis désolé(e) / Pardon" },
+        { "tr": "Hoşça kal", "fr": "Au revoir (dit par celui qui part)" },
+        { "tr": "Güle güle", "fr": "Au revoir (dit par celui qui reste)" },
+        { "tr": "Görüşürüz", "fr": "À bientôt / On se voit" },
+        { "tr": "Evet", "fr": "Oui" },
+        { "tr": "Hayır", "fr": "Non" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Tu ou vous : -sın / -sınız",
+          "explication": "Comme en français, le turc distingue le tutoiement et le vouvoiement. « Nasılsın? » s'adresse à un ami ; « Nasılsınız? » s'adresse à une personne qu'on vouvoie ou à plusieurs personnes.",
+          "exemples": [
+            { "tr": "Merhaba Ali, nasılsın?", "fr": "Salut Ali, comment vas-tu ?" },
+            { "tr": "Günaydın hocam, nasılsınız?", "fr": "Bonjour professeur, comment allez-vous ?" }
+          ]
+        },
+        {
+          "titre": "Hoşça kal / Güle güle",
+          "explication": "La personne qui part dit « Hoşça kal » (ou « Hoşça kalın » au vouvoiement). La personne qui reste répond « Güle güle ».",
+          "exemples": [
+            { "tr": "— Hoşça kal! — Güle güle!", "fr": "— Au revoir ! (je pars) — Au revoir ! (je reste)" }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Selin", "tr": "Günaydın Karim!", "fr": "Bonjour Karim !" },
+        { "locuteur": "Karim", "tr": "Günaydın Selin! Nasılsın?", "fr": "Bonjour Selin ! Comment vas-tu ?" },
+        { "locuteur": "Selin", "tr": "İyiyim, teşekkür ederim. Sen nasılsın?", "fr": "Je vais bien, merci. Et toi ?" },
+        { "locuteur": "Karim", "tr": "Ben de iyiyim. Görüşürüz!", "fr": "Moi aussi. À bientôt !" },
+        { "locuteur": "Selin", "tr": "Hoşça kal!", "fr": "Au revoir !" },
+        { "locuteur": "Karim", "tr": "Güle güle!", "fr": "Au revoir !" }
+      ],
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Il est 21 h. Que dites-vous en arrivant chez des amis ?",
+          "options": ["Günaydın", "İyi akşamlar", "İyi geceler", "Güle güle"],
+          "reponse": "İyi akşamlar"
+        },
+        {
+          "type": "qcm",
+          "consigne": "Vous quittez la classe. Que dites-vous ?",
+          "options": ["Güle güle", "Hoşça kal", "Merhaba", "Rica ederim"],
+          "reponse": "Hoşça kal"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez en turc : « Comment allez-vous ? »",
+          "reponse": "Nasılsınız?"
+        },
+        {
+          "type": "completer",
+          "consigne": "Complétez : — Teşekkür ederim. — … ederim.",
+          "reponse": "Rica"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L03",
+      "numero": 3,
+      "titre": "Se présenter",
+      "titre_tr": "Kendimizi Tanıtalım",
+      "objectifs": [
+        "Dire son nom et demander celui des autres",
+        "Connaître les pronoms personnels",
+        "Comprendre l'harmonie vocalique",
+        "Utiliser les suffixes du verbe « être »"
+      ],
+      "vocabulaire": [
+        { "tr": "ad / isim", "fr": "nom, prénom" },
+        { "tr": "soyadı", "fr": "nom de famille" },
+        { "tr": "Benim adım …", "fr": "Je m'appelle …" },
+        { "tr": "Adın ne?", "fr": "Comment t'appelles-tu ?" },
+        { "tr": "Adınız ne?", "fr": "Comment vous appelez-vous ?" },
+        { "tr": "Memnun oldum", "fr": "Enchanté(e)" },
+        { "tr": "Ben de memnun oldum", "fr": "Moi de même, enchanté(e)" },
+        { "tr": "öğrenci", "fr": "étudiant(e), élève" },
+        { "tr": "öğretmen", "fr": "enseignant(e)" },
+        { "tr": "doktor", "fr": "médecin" },
+        { "tr": "mühendis", "fr": "ingénieur" },
+        { "tr": "Ne iş yapıyorsun?", "fr": "Que fais-tu comme travail ?" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Les pronoms personnels",
+          "explication": "ben (je), sen (tu), o (il / elle — pas de genre en turc), biz (nous), siz (vous), onlar (ils / elles). Le pronom est souvent omis car la terminaison suffit.",
+          "exemples": [
+            { "tr": "O öğretmen.", "fr": "Il / Elle est enseignant(e)." }
+          ]
+        },
+        {
+          "titre": "L'harmonie vocalique",
+          "explication": "Les suffixes changent de voyelle selon la dernière voyelle du mot. Harmonie à 2 formes (e/a) : après a, ı, o, u → a ; après e, i, ö, ü → e. Harmonie à 4 formes (ı/i/u/ü) : après a, ı → ı ; après e, i → i ; après o, u → u ; après ö, ü → ü.",
+          "exemples": [
+            { "tr": "kitap → kitaplar", "fr": "livre → livres (a → a)" },
+            { "tr": "ev → evler", "fr": "maison → maisons (e → e)" },
+            { "tr": "doktor → doktorum", "fr": "médecin → je suis médecin (o → u)" },
+            { "tr": "Türk → Türküm", "fr": "Turc → je suis turc (ü → ü)" }
+          ]
+        },
+        {
+          "titre": "Le verbe « être » : suffixes personnels",
+          "explication": "Il n'y a pas de verbe « être » séparé : on ajoute un suffixe au nom ou à l'adjectif. ben : -(y)ım/-(y)im/-(y)um/-(y)üm ; sen : -sın/-sin/-sun/-sün ; o : rien ; biz : -(y)ız/-(y)iz/-(y)uz/-(y)üz ; siz : -sınız/-siniz/-sunuz/-sünüz ; onlar : -lar/-ler (facultatif). Le « y » apparaît après une voyelle.",
+          "exemples": [
+            { "tr": "Ben öğrenciyim.", "fr": "Je suis étudiant(e)." },
+            { "tr": "Sen öğrencisin.", "fr": "Tu es étudiant(e)." },
+            { "tr": "O öğrenci.", "fr": "Il / Elle est étudiant(e)." },
+            { "tr": "Biz öğrenciyiz.", "fr": "Nous sommes étudiants." },
+            { "tr": "Siz öğrencisiniz.", "fr": "Vous êtes étudiant(s)." },
+            { "tr": "Onlar öğrenci(ler).", "fr": "Ils sont étudiants." },
+            { "tr": "Ben doktorum.", "fr": "Je suis médecin." }
+          ]
+        },
+        {
+          "titre": "La question : mı / mi / mu / mü",
+          "explication": "Pour poser une question fermée, on ajoute la particule mı/mi/mu/mü (harmonie à 4 formes), écrite séparément. Le suffixe personnel s'attache à la particule.",
+          "exemples": [
+            { "tr": "Öğrenci misin?", "fr": "Es-tu étudiant(e) ?" },
+            { "tr": "Doktor musunuz?", "fr": "Êtes-vous médecin ?" },
+            { "tr": "Evet, doktorum. / Hayır, doktor değilim.", "fr": "Oui, je suis médecin. / Non, je ne suis pas médecin." }
+          ]
+        },
+        {
+          "titre": "La négation : değil",
+          "explication": "Pour nier « être », on utilise « değil » suivi du suffixe personnel : değilim, değilsin, değil, değiliz, değilsiniz, değiller.",
+          "exemples": [
+            { "tr": "Ben öğretmen değilim.", "fr": "Je ne suis pas enseignant(e)." }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Emre", "tr": "Merhaba, benim adım Emre. Senin adın ne?", "fr": "Bonjour, je m'appelle Emre. Et toi, comment t'appelles-tu ?" },
+        { "locuteur": "Amel", "tr": "Merhaba Emre, benim adım Amel.", "fr": "Bonjour Emre, je m'appelle Amel." },
+        { "locuteur": "Emre", "tr": "Memnun oldum Amel. Öğrenci misin?", "fr": "Enchanté, Amel. Tu es étudiante ?" },
+        { "locuteur": "Amel", "tr": "Hayır, öğrenci değilim. Ben mühendisim. Sen?", "fr": "Non, je ne suis pas étudiante. Je suis ingénieure. Et toi ?" },
+        { "locuteur": "Emre", "tr": "Ben öğretmenim.", "fr": "Je suis enseignant." }
+      ],
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complétez avec le bon suffixe : Ben mühendis…",
+          "reponse": "Ben mühendisim."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complétez avec la bonne particule : Sen doktor … ?",
+          "reponse": "Sen doktor musun?"
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Nous sommes étudiants » se dit :",
+          "options": ["Biz öğrencisiniz", "Biz öğrenciyiz", "Biz öğrenciyim", "Biz öğrenciler"],
+          "reponse": "Biz öğrenciyiz"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Je ne suis pas médecin. »",
+          "reponse": "Ben doktor değilim."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L04",
+      "numero": 4,
+      "titre": "Les nombres et l'âge",
+      "titre_tr": "Sayılar ve Yaş",
+      "objectifs": [
+        "Compter de 0 à 100",
+        "Dire et demander l'âge",
+        "Donner un numéro de téléphone"
+      ],
+      "vocabulaire": [
+        { "tr": "sıfır", "fr": "0" },
+        { "tr": "bir", "fr": "1" },
+        { "tr": "iki", "fr": "2" },
+        { "tr": "üç", "fr": "3" },
+        { "tr": "dört", "fr": "4" },
+        { "tr": "beş", "fr": "5" },
+        { "tr": "altı", "fr": "6" },
+        { "tr": "yedi", "fr": "7" },
+        { "tr": "sekiz", "fr": "8" },
+        { "tr": "dokuz", "fr": "9" },
+        { "tr": "on", "fr": "10" },
+        { "tr": "yirmi", "fr": "20" },
+        { "tr": "otuz", "fr": "30" },
+        { "tr": "kırk", "fr": "40" },
+        { "tr": "elli", "fr": "50" },
+        { "tr": "altmış", "fr": "60" },
+        { "tr": "yetmiş", "fr": "70" },
+        { "tr": "seksen", "fr": "80" },
+        { "tr": "doksan", "fr": "90" },
+        { "tr": "yüz", "fr": "100" },
+        { "tr": "Kaç?", "fr": "Combien ?" },
+        { "tr": "yaş", "fr": "âge" },
+        { "tr": "telefon numarası", "fr": "numéro de téléphone" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Former les nombres",
+          "explication": "Les nombres se forment simplement en juxtaposant dizaine et unité : on bir (11), on iki (12), yirmi beş (25), otuz yedi (37), doksan dokuz (99).",
+          "exemples": [
+            { "tr": "on beş", "fr": "15" },
+            { "tr": "kırk iki", "fr": "42" },
+            { "tr": "seksen sekiz", "fr": "88" }
+          ]
+        },
+        {
+          "titre": "Demander l'âge",
+          "explication": "On demande « Kaç yaşındasın? » (tutoiement) ou « Kaç yaşındasınız? » (vouvoiement). On répond avec le nombre + yaşındayım.",
+          "exemples": [
+            { "tr": "Kaç yaşındasın? — Yirmi beş yaşındayım.", "fr": "Quel âge as-tu ? — J'ai 25 ans." },
+            { "tr": "O kaç yaşında? — Otuz yaşında.", "fr": "Quel âge a-t-il / elle ? — 30 ans." }
+          ]
+        },
+        {
+          "titre": "Pas de pluriel après un nombre",
+          "explication": "Après un nombre, le nom reste au singulier : üç kitap (trois livres), on öğrenci (dix étudiants).",
+          "exemples": [
+            { "tr": "iki çay", "fr": "deux thés" }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Deniz", "tr": "Kaç yaşındasın?", "fr": "Quel âge as-tu ?" },
+        { "locuteur": "Youssef", "tr": "Yirmi sekiz yaşındayım. Sen?", "fr": "J'ai 28 ans. Et toi ?" },
+        { "locuteur": "Deniz", "tr": "Ben otuz bir yaşındayım. Telefon numaran ne?", "fr": "J'ai 31 ans. Quel est ton numéro de téléphone ?" },
+        { "locuteur": "Youssef", "tr": "Beş üç iki, kırk yedi, on dokuz, altmış.", "fr": "532, 47, 19, 60." }
+      ],
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Comment dit-on 47 ?",
+          "options": ["kırk yedi", "dört yedi", "yetmiş dört", "kırk yetmiş"],
+          "reponse": "kırk yedi"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Écrivez en chiffres : « altmış üç »",
+          "reponse": "63"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « J'ai 34 ans. »",
+          "reponse": "Otuz dört yaşındayım."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Trois livres » se dit :",
+          "options": ["üç kitaplar", "üç kitap", "kitap üç"],
+          "reponse": "üç kitap"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L05",
+      "numero": 5,
+      "titre": "Les objets autour de nous",
+      "titre_tr": "Bu Ne? Etrafımızdaki Eşyalar",
+      "objectifs": [
+        "Utiliser les démonstratifs bu, şu, o",
+        "Poser les questions Ne ? et Kim ?",
+        "Nommer les objets de la classe"
+      ],
+      "vocabulaire": [
+        { "tr": "kitap", "fr": "livre" },
+        { "tr": "defter", "fr": "cahier" },
+        { "tr": "kalem", "fr": "stylo, crayon" },
+        { "tr": "silgi", "fr": "gomme" },
+        { "tr": "çanta", "fr": "sac" },
+        { "tr": "masa", "fr": "table" },
+        { "tr": "sandalye", "fr": "chaise" },
+        { "tr": "kapı", "fr": "porte" },
+        { "tr": "pencere", "fr": "fenêtre" },
+        { "tr": "tahta", "fr": "tableau" },
+        { "tr": "bilgisayar", "fr": "ordinateur" },
+        { "tr": "telefon", "fr": "téléphone" },
+        { "tr": "Ne?", "fr": "Quoi ? Qu'est-ce que ?" },
+        { "tr": "Kim?", "fr": "Qui ?" }
+      ],
+      "grammaire": [
+        {
+          "titre": "bu / şu / o",
+          "explication": "bu = ceci (tout près), şu = cela (un peu plus loin, qu'on montre), o = cela là-bas (loin). Au pluriel : bunlar, şunlar, onlar.",
+          "exemples": [
+            { "tr": "Bu ne? — Bu bir kitap.", "fr": "Qu'est-ce que c'est ? — C'est un livre." },
+            { "tr": "Şu ne? — Şu bir pencere.", "fr": "Qu'est-ce que c'est que ça ? — C'est une fenêtre." },
+            { "tr": "Bunlar ne? — Bunlar kalem.", "fr": "Qu'est-ce que c'est ? — Ce sont des stylos." }
+          ]
+        },
+        {
+          "titre": "Ne ? / Kim ?",
+          "explication": "« Ne? » s'utilise pour les choses, « Kim? » pour les personnes. « bir » sert d'article indéfini (un / une).",
+          "exemples": [
+            { "tr": "O kim? — O Ayşe.", "fr": "Qui est-ce ? — C'est Ayşe." },
+            { "tr": "Bu bir çanta mı? — Evet, bu bir çanta.", "fr": "Est-ce un sac ? — Oui, c'est un sac." }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Öğretmen", "tr": "Bu ne?", "fr": "Qu'est-ce que c'est ?" },
+        { "locuteur": "Öğrenci", "tr": "Bu bir defter.", "fr": "C'est un cahier." },
+        { "locuteur": "Öğretmen", "tr": "Şu bir sandalye mi?", "fr": "Est-ce une chaise ?" },
+        { "locuteur": "Öğrenci", "tr": "Hayır, şu bir sandalye değil. Şu bir masa.", "fr": "Non, ce n'est pas une chaise. C'est une table." }
+      ],
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Pour parler d'une personne, on demande :",
+          "options": ["Ne?", "Kim?", "Kaç?"],
+          "reponse": "Kim?"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Ceci est un ordinateur. »",
+          "reponse": "Bu bir bilgisayar."
+        },
+        {
+          "type": "completer",
+          "consigne": "Complétez : Bu bir kalem … ? — Evet, bu bir kalem.",
+          "reponse": "mi"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L06",
+      "numero": 6,
+      "titre": "Pays, nationalités et langues",
+      "titre_tr": "Ülkeler, Milliyetler ve Diller",
+      "objectifs": [
+        "Dire d'où l'on vient",
+        "Nommer les nationalités et les langues",
+        "Utiliser le suffixe -lı / -li / -lu / -lü"
+      ],
+      "vocabulaire": [
+        { "tr": "Türkiye — Türk — Türkçe", "fr": "Turquie — Turc — turc (langue)" },
+        { "tr": "Tunus — Tunuslu — Arapça", "fr": "Tunisie — Tunisien — arabe" },
+        { "tr": "Fransa — Fransız — Fransızca", "fr": "France — Français — français" },
+        { "tr": "Cezayir — Cezayirli", "fr": "Algérie — Algérien" },
+        { "tr": "Fas — Faslı", "fr": "Maroc — Marocain" },
+        { "tr": "Mısır — Mısırlı", "fr": "Égypte — Égyptien" },
+        { "tr": "Almanya — Alman — Almanca", "fr": "Allemagne — Allemand — allemand" },
+        { "tr": "İngiltere — İngiliz — İngilizce", "fr": "Angleterre — Anglais — anglais" },
+        { "tr": "ülke", "fr": "pays" },
+        { "tr": "şehir", "fr": "ville" },
+        { "tr": "dil", "fr": "langue" },
+        { "tr": "Nerelisin?", "fr": "D'où es-tu ?" },
+        { "tr": "biraz", "fr": "un peu" },
+        { "tr": "konuşmak", "fr": "parler" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Le suffixe -lı / -li / -lu / -lü",
+          "explication": "Ajouté à un nom de pays ou de ville, ce suffixe indique l'origine (harmonie à 4 formes). Il s'utilise aussi bien pour les pays que pour les villes.",
+          "exemples": [
+            { "tr": "Tunus → Tunuslu", "fr": "Tunisie → Tunisien" },
+            { "tr": "İstanbul → İstanbullu", "fr": "Istanbul → Stambouliote" },
+            { "tr": "Nerelisin? — Tunusluyum.", "fr": "D'où es-tu ? — Je suis tunisien(ne)." }
+          ]
+        },
+        {
+          "titre": "Les langues : -ca / -ce / -ça / -çe",
+          "explication": "Le nom de la langue se forme souvent avec ce suffixe : Türk → Türkçe, Fransız → Fransızca, Arap → Arapça, Alman → Almanca.",
+          "exemples": [
+            { "tr": "Türkçe biraz konuşuyorum.", "fr": "Je parle un peu turc." },
+            { "tr": "Hangi dilleri konuşuyorsun?", "fr": "Quelles langues parles-tu ?" }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Zeynep", "tr": "Nerelisin?", "fr": "D'où es-tu ?" },
+        { "locuteur": "Amine", "tr": "Tunusluyum. Sen?", "fr": "Je suis tunisien. Et toi ?" },
+        { "locuteur": "Zeynep", "tr": "Ben Türk'üm, İzmirliyim. Hangi dilleri konuşuyorsun?", "fr": "Je suis turque, d'Izmir. Quelles langues parles-tu ?" },
+        { "locuteur": "Amine", "tr": "Arapça, Fransızca ve İngilizce konuşuyorum. Türkçe biraz konuşuyorum.", "fr": "Je parle arabe, français et anglais. Je parle un peu turc." }
+      ],
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Complétez : Fas → Fas…",
+          "reponse": "Faslı"
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Je suis de Tunis / tunisien(ne) » :",
+          "options": ["Tunusum", "Tunusluyum", "Tunusçayım", "Tunustayım"],
+          "reponse": "Tunusluyum"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Je parle français. »",
+          "reponse": "Fransızca konuşuyorum."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L07",
+      "numero": 7,
+      "titre": "Il y a / il n'y a pas — le pluriel",
+      "titre_tr": "Var / Yok — Çoğul Eki",
+      "objectifs": [
+        "Exprimer l'existence avec var et yok",
+        "Exprimer la possession simple",
+        "Former le pluriel avec -lar / -ler"
+      ],
+      "vocabulaire": [
+        { "tr": "var", "fr": "il y a / avoir" },
+        { "tr": "yok", "fr": "il n'y a pas / ne pas avoir" },
+        { "tr": "kedi", "fr": "chat" },
+        { "tr": "köpek", "fr": "chien" },
+        { "tr": "araba", "fr": "voiture" },
+        { "tr": "para", "fr": "argent" },
+        { "tr": "zaman", "fr": "temps" },
+        { "tr": "sınıf", "fr": "classe (salle)" },
+        { "tr": "oda", "fr": "chambre, pièce" }
+      ],
+      "grammaire": [
+        {
+          "titre": "var / yok",
+          "explication": "« var » signifie « il y a » et « yok » « il n'y a pas ». Question : var mı? / yok mu?",
+          "exemples": [
+            { "tr": "Sınıfta bir tahta var.", "fr": "Il y a un tableau dans la classe." },
+            { "tr": "Odada televizyon yok.", "fr": "Il n'y a pas de télévision dans la chambre." },
+            { "tr": "Burada çay var mı?", "fr": "Est-ce qu'il y a du thé ici ?" }
+          ]
+        },
+        {
+          "titre": "Avoir : possessif + var / yok",
+          "explication": "Pour dire « j'ai », on emploie le nom avec un suffixe possessif + var (voir leçon 9).",
+          "exemples": [
+            { "tr": "Arabam var.", "fr": "J'ai une voiture." },
+            { "tr": "Zamanım yok.", "fr": "Je n'ai pas le temps." }
+          ]
+        },
+        {
+          "titre": "Le pluriel -lar / -ler",
+          "explication": "Harmonie à 2 formes : -lar après a, ı, o, u ; -ler après e, i, ö, ü.",
+          "exemples": [
+            { "tr": "kitap → kitaplar", "fr": "livres" },
+            { "tr": "masa → masalar", "fr": "tables" },
+            { "tr": "öğrenci → öğrenciler", "fr": "étudiants" },
+            { "tr": "köpek → köpekler", "fr": "chiens" }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Mert", "tr": "Evinde kedi var mı?", "fr": "Tu as un chat chez toi ?" },
+        { "locuteur": "Sarra", "tr": "Evet, iki kedi var. Köpek yok.", "fr": "Oui, il y a deux chats. Pas de chien." },
+        { "locuteur": "Mert", "tr": "Benim kedim yok ama köpeğim var.", "fr": "Je n'ai pas de chat, mais j'ai un chien." }
+      ],
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Mettez au pluriel : defter → …",
+          "reponse": "defterler"
+        },
+        {
+          "type": "completer",
+          "consigne": "Mettez au pluriel : kapı → …",
+          "reponse": "kapılar"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Il n'y a pas d'eau. »",
+          "reponse": "Su yok."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Y a-t-il du thé ? » :",
+          "options": ["Çay var mı?", "Çay mı var?", "Çay yok mu var?"],
+          "reponse": "Çay var mı?"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L08",
+      "numero": 8,
+      "titre": "Où ? — Le lieu et la direction",
+      "titre_tr": "Nerede? Nereye? Nereden?",
+      "objectifs": [
+        "Situer un lieu (locatif -da / -de)",
+        "Indiquer une destination (datif -(y)a / -(y)e)",
+        "Indiquer une provenance (ablatif -dan / -den)",
+        "Connaître la mutation d → t"
+      ],
+      "vocabulaire": [
+        { "tr": "ev", "fr": "maison" },
+        { "tr": "okul", "fr": "école" },
+        { "tr": "üniversite", "fr": "université" },
+        { "tr": "hastane", "fr": "hôpital" },
+        { "tr": "iş / işyeri", "fr": "travail / lieu de travail" },
+        { "tr": "market", "fr": "épicerie, supérette" },
+        { "tr": "park", "fr": "parc" },
+        { "tr": "burada", "fr": "ici" },
+        { "tr": "şurada", "fr": "là" },
+        { "tr": "orada", "fr": "là-bas" },
+        { "tr": "Nerede?", "fr": "Où ? (sans mouvement)" },
+        { "tr": "Nereye?", "fr": "Où ? (vers où)" },
+        { "tr": "Nereden?", "fr": "D'où ?" },
+        { "tr": "gitmek", "fr": "aller" },
+        { "tr": "gelmek", "fr": "venir" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Locatif : -da / -de (« dans, à, chez »)",
+          "explication": "Harmonie à 2 formes. Après une consonne sourde (f, s, t, k, ç, ş, h, p), le d devient t : -ta / -te. Moyen mnémotechnique : « Fıstıkçı Şahap ». Avec un nom propre, on met une apostrophe.",
+          "exemples": [
+            { "tr": "evde", "fr": "à la maison" },
+            { "tr": "okulda", "fr": "à l'école" },
+            { "tr": "sınıfta", "fr": "en classe (f → t)" },
+            { "tr": "Tunus'ta", "fr": "à Tunis / en Tunisie (s → t)" },
+            { "tr": "Neredesin? — Evdeyim.", "fr": "Où es-tu ? — Je suis à la maison." }
+          ]
+        },
+        {
+          "titre": "Datif : -(y)a / -(y)e (« vers, à »)",
+          "explication": "Indique la direction. Un y s'intercale après une voyelle.",
+          "exemples": [
+            { "tr": "eve", "fr": "à la maison (direction)" },
+            { "tr": "okula", "fr": "à l'école" },
+            { "tr": "hastaneye", "fr": "à l'hôpital" },
+            { "tr": "İstanbul'a gidiyorum.", "fr": "Je vais à Istanbul." }
+          ]
+        },
+        {
+          "titre": "Ablatif : -dan / -den (« de, depuis »)",
+          "explication": "Indique la provenance. Même mutation d → t : -tan / -ten.",
+          "exemples": [
+            { "tr": "evden", "fr": "de la maison" },
+            { "tr": "okuldan", "fr": "de l'école" },
+            { "tr": "Tunus'tan geliyorum.", "fr": "Je viens de Tunisie." }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Ece", "tr": "Neredesin?", "fr": "Où es-tu ?" },
+        { "locuteur": "Hamza", "tr": "Hastanedeyim. Sen nereye gidiyorsun?", "fr": "Je suis à l'hôpital. Et toi, où vas-tu ?" },
+        { "locuteur": "Ece", "tr": "Markete gidiyorum. Sonra eve gidiyorum.", "fr": "Je vais à l'épicerie. Ensuite je rentre à la maison." },
+        { "locuteur": "Hamza", "tr": "Ben de akşam işten geliyorum.", "fr": "Moi, je rentre du travail ce soir." }
+      ],
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "Locatif : kitap → kitap…",
+          "reponse": "kitapta"
+        },
+        {
+          "type": "completer",
+          "consigne": "Datif : park → park…",
+          "reponse": "parka"
+        },
+        {
+          "type": "completer",
+          "consigne": "Ablatif : Fransa → Fransa'…",
+          "reponse": "Fransa'dan"
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Je vais à l'université » :",
+          "options": ["Üniversitede gidiyorum.", "Üniversiteye gidiyorum.", "Üniversiteden gidiyorum."],
+          "reponse": "Üniversiteye gidiyorum."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L09",
+      "numero": 9,
+      "titre": "La famille et les possessifs",
+      "titre_tr": "Aile ve İyelik Ekleri",
+      "objectifs": [
+        "Présenter les membres de sa famille",
+        "Utiliser les suffixes possessifs",
+        "Connaître l'adoucissement des consonnes (p → b, ç → c, t → d, k → ğ)"
+      ],
+      "vocabulaire": [
+        { "tr": "aile", "fr": "famille" },
+        { "tr": "anne", "fr": "mère" },
+        { "tr": "baba", "fr": "père" },
+        { "tr": "kardeş", "fr": "frère / sœur (cadet·te ou en général)" },
+        { "tr": "abla", "fr": "grande sœur" },
+        { "tr": "ağabey (abi)", "fr": "grand frère" },
+        { "tr": "eş", "fr": "conjoint(e)" },
+        { "tr": "karı / koca", "fr": "épouse / mari (familier)" },
+        { "tr": "oğul", "fr": "fils" },
+        { "tr": "kız", "fr": "fille" },
+        { "tr": "çocuk", "fr": "enfant" },
+        { "tr": "dede", "fr": "grand-père" },
+        { "tr": "nine / babaanne / anneanne", "fr": "grand-mère (paternelle : babaanne, maternelle : anneanne)" },
+        { "tr": "amca / dayı", "fr": "oncle paternel / maternel" },
+        { "tr": "teyze / hala", "fr": "tante maternelle / paternelle" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Les suffixes possessifs",
+          "explication": "benim : -(ı)m ; senin : -(ı)n ; onun : -(s)ı ; bizim : -(ı)mız ; sizin : -(ı)nız ; onların : -ları / -leri. La voyelle suit l'harmonie à 4 formes et disparaît après une voyelle (le s de -sı apparaît après une voyelle).",
+          "exemples": [
+            { "tr": "annem, annen, annesi", "fr": "ma mère, ta mère, sa mère" },
+            { "tr": "annemiz, anneniz, anneleri", "fr": "notre mère, votre mère, leur mère" },
+            { "tr": "evim, evin, evi", "fr": "ma maison, ta maison, sa maison" },
+            { "tr": "okulumuz", "fr": "notre école" }
+          ]
+        },
+        {
+          "titre": "Adoucissement des consonnes finales",
+          "explication": "Devant une voyelle, certaines consonnes finales s'adoucissent : p → b, ç → c, t → d, k → ğ (souvent après une voyelle, dans les mots de plus d'une syllabe).",
+          "exemples": [
+            { "tr": "kitap → kitabım", "fr": "mon livre" },
+            { "tr": "çocuk → çocuğum", "fr": "mon enfant" },
+            { "tr": "köpek → köpeğim", "fr": "mon chien" }
+          ]
+        },
+        {
+          "titre": "« oğul » perd sa voyelle",
+          "explication": "Quelques mots perdent leur dernière voyelle devant un suffixe vocalique : oğul → oğlum (mon fils), isim → ismim (mon nom), ağız → ağzım (ma bouche).",
+          "exemples": [
+            { "tr": "Oğlum on yaşında.", "fr": "Mon fils a dix ans." }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Burak", "tr": "Kaç kardeşin var?", "fr": "Combien de frères et sœurs as-tu ?" },
+        { "locuteur": "Nour", "tr": "İki kardeşim var: bir ablam ve bir erkek kardeşim.", "fr": "J'ai deux frères et sœurs : une grande sœur et un petit frère." },
+        { "locuteur": "Burak", "tr": "Ablan ne iş yapıyor?", "fr": "Que fait ta grande sœur ?" },
+        { "locuteur": "Nour", "tr": "Ablam doktor. Annem ve babam öğretmen.", "fr": "Ma sœur est médecin. Ma mère et mon père sont enseignants." }
+      ],
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "« mon père » : baba…",
+          "reponse": "babam"
+        },
+        {
+          "type": "completer",
+          "consigne": "« ton livre » : kitap → …",
+          "reponse": "kitabın"
+        },
+        {
+          "type": "completer",
+          "consigne": "« sa maison » : ev → …",
+          "reponse": "evi"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « J'ai un grand frère. »",
+          "reponse": "Bir ağabeyim var."
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L10",
+      "numero": 10,
+      "titre": "Que fais-tu ? — Le présent en -iyor",
+      "titre_tr": "Ne Yapıyorsun? Şimdiki Zaman",
+      "objectifs": [
+        "Parler d'une action en cours ou habituelle",
+        "Conjuguer au présent affirmatif, négatif et interrogatif",
+        "Connaître les verbes courants"
+      ],
+      "vocabulaire": [
+        { "tr": "yapmak", "fr": "faire" },
+        { "tr": "okumak", "fr": "lire, étudier" },
+        { "tr": "yazmak", "fr": "écrire" },
+        { "tr": "dinlemek", "fr": "écouter" },
+        { "tr": "izlemek", "fr": "regarder" },
+        { "tr": "çalışmak", "fr": "travailler, réviser" },
+        { "tr": "yemek", "fr": "manger" },
+        { "tr": "içmek", "fr": "boire" },
+        { "tr": "uyumak", "fr": "dormir" },
+        { "tr": "öğrenmek", "fr": "apprendre" },
+        { "tr": "beklemek", "fr": "attendre" },
+        { "tr": "şimdi", "fr": "maintenant" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Formation : radical + -(ı)yor + personne",
+          "explication": "On enlève -mak / -mek, puis on ajoute -ıyor / -iyor / -uyor / -üyor (harmonie à 4 formes) ; après une voyelle, seulement -yor. Terminaisons : -um, -sun, —, -uz, -sunuz, -lar.",
+          "exemples": [
+            { "tr": "yapıyorum, yapıyorsun, yapıyor", "fr": "je fais, tu fais, il fait" },
+            { "tr": "yapıyoruz, yapıyorsunuz, yapıyorlar", "fr": "nous faisons, vous faites, ils font" },
+            { "tr": "okuyorum", "fr": "je lis" },
+            { "tr": "geliyorum", "fr": "je viens" },
+            { "tr": "görüyorum", "fr": "je vois" }
+          ]
+        },
+        {
+          "titre": "Cas particuliers",
+          "explication": "Si le radical finit par a ou e, cette voyelle devient ı/i/u/ü : izle → izliyorum, bekle → bekliyorum, anla → anlıyorum. gitmek → gidiyorum et etmek → ediyorum (t → d).",
+          "exemples": [
+            { "tr": "Televizyon izliyorum.", "fr": "Je regarde la télévision." },
+            { "tr": "Okula gidiyorum.", "fr": "Je vais à l'école." }
+          ]
+        },
+        {
+          "titre": "Négation et question",
+          "explication": "Négation : -mı- / -mi- / -mu- / -mü- avant -yor : yapmıyorum, gelmiyorum. Question : -iyor + mu + personne : yapıyor musun? geliyor musunuz?",
+          "exemples": [
+            { "tr": "Kahve içmiyorum.", "fr": "Je ne bois pas de café." },
+            { "tr": "Türkçe öğreniyor musun? — Evet, öğreniyorum.", "fr": "Apprends-tu le turc ? — Oui, je l'apprends." }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Can", "tr": "Alo, ne yapıyorsun?", "fr": "Allô, que fais-tu ?" },
+        { "locuteur": "Rania", "tr": "Türkçe çalışıyorum. Sen ne yapıyorsun?", "fr": "Je révise le turc. Et toi ?" },
+        { "locuteur": "Can", "tr": "Ben müzik dinliyorum. Yarın sınava giriyor musun?", "fr": "J'écoute de la musique. Tu passes l'examen demain ?" },
+        { "locuteur": "Rania", "tr": "Hayır, yarın sınava girmiyorum. Cuma günü.", "fr": "Non, je ne passe pas l'examen demain. C'est vendredi." }
+      ],
+      "exercices": [
+        {
+          "type": "completer",
+          "consigne": "okumak → (ben) …",
+          "reponse": "okuyorum"
+        },
+        {
+          "type": "completer",
+          "consigne": "izlemek → (biz) …",
+          "reponse": "izliyoruz"
+        },
+        {
+          "type": "completer",
+          "consigne": "gitmek, négatif → (ben) …",
+          "reponse": "gitmiyorum"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Est-ce que tu travailles ? »",
+          "reponse": "Çalışıyor musun?"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L11",
+      "numero": 11,
+      "titre": "Les jours, les mois et l'heure",
+      "titre_tr": "Günler, Aylar ve Saatler",
+      "objectifs": [
+        "Nommer les jours de la semaine et les mois",
+        "Demander et dire l'heure",
+        "Dire quand on fait quelque chose"
+      ],
+      "vocabulaire": [
+        { "tr": "Pazartesi", "fr": "lundi" },
+        { "tr": "Salı", "fr": "mardi" },
+        { "tr": "Çarşamba", "fr": "mercredi" },
+        { "tr": "Perşembe", "fr": "jeudi" },
+        { "tr": "Cuma", "fr": "vendredi" },
+        { "tr": "Cumartesi", "fr": "samedi" },
+        { "tr": "Pazar", "fr": "dimanche" },
+        { "tr": "Ocak, Şubat, Mart, Nisan", "fr": "janvier, février, mars, avril" },
+        { "tr": "Mayıs, Haziran, Temmuz, Ağustos", "fr": "mai, juin, juillet, août" },
+        { "tr": "Eylül, Ekim, Kasım, Aralık", "fr": "septembre, octobre, novembre, décembre" },
+        { "tr": "bugün / yarın / dün", "fr": "aujourd'hui / demain / hier" },
+        { "tr": "sabah / öğle / akşam / gece", "fr": "matin / midi / soir / nuit" },
+        { "tr": "hafta / ay / yıl", "fr": "semaine / mois / année" },
+        { "tr": "Saat kaç?", "fr": "Quelle heure est-il ?" },
+        { "tr": "buçuk", "fr": "et demie" },
+        { "tr": "çeyrek", "fr": "quart" }
+      ],
+      "grammaire": [
+        {
+          "titre": "Dire l'heure pile et la demie",
+          "explication": "Saat + nombre pour l'heure pile ; on ajoute « buçuk » pour la demie. Pour 12 h 30 on dit aussi « yarım ».",
+          "exemples": [
+            { "tr": "Saat üç.", "fr": "Il est trois heures." },
+            { "tr": "Saat üç buçuk.", "fr": "Il est trois heures et demie." }
+          ]
+        },
+        {
+          "titre": "Les minutes : geçiyor / var",
+          "explication": "Minutes après l'heure : l'heure à l'accusatif + minutes + geçiyor. Minutes avant l'heure : l'heure au datif + minutes + var.",
+          "exemples": [
+            { "tr": "Saat ikiyi on geçiyor.", "fr": "Il est deux heures dix." },
+            { "tr": "Saat dördü çeyrek geçiyor.", "fr": "Il est quatre heures et quart." },
+            { "tr": "Saat beşe çeyrek var.", "fr": "Il est cinq heures moins le quart." }
+          ]
+        },
+        {
+          "titre": "Jours : « … günü »",
+          "explication": "Pour dire « le lundi / lundi », on dit « Pazartesi günü » ou simplement « Pazartesi ». Pour un mois : « Ekim'de » (en octobre).",
+          "exemples": [
+            { "tr": "Cuma günü Türkçe kursuna gidiyorum.", "fr": "Vendredi, je vais au cours de turc." },
+            { "tr": "Ekim'de Türkçe öğreniyorum.", "fr": "En octobre, j'apprends le turc." }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Elif", "tr": "Pardon, saat kaç?", "fr": "Pardon, quelle heure est-il ?" },
+        { "locuteur": "Mehdi", "tr": "Saat altıyı yirmi geçiyor.", "fr": "Il est six heures vingt." },
+        { "locuteur": "Elif", "tr": "Teşekkürler! Ders saat yedide başlıyor.", "fr": "Merci ! Le cours commence à sept heures." },
+        { "locuteur": "Mehdi", "tr": "Hangi günler dersin var?", "fr": "Quels jours as-tu cours ?" },
+        { "locuteur": "Elif", "tr": "Salı ve Perşembe günleri.", "fr": "Le mardi et le jeudi." }
+      ],
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Quel jour vient après Çarşamba ?",
+          "options": ["Salı", "Perşembe", "Cuma", "Pazar"],
+          "reponse": "Perşembe"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Il est huit heures et demie. »",
+          "reponse": "Saat sekiz buçuk."
+        },
+        {
+          "type": "qcm",
+          "consigne": "« Ekim » correspond à :",
+          "options": ["août", "septembre", "octobre", "novembre"],
+          "reponse": "octobre"
+        },
+        {
+          "type": "completer",
+          "consigne": "Il est neuf heures moins le quart : Saat dokuza çeyrek …",
+          "reponse": "var"
+        }
+      ],
+      "videos": []
+    },
+    {
+      "id": "L12",
+      "numero": 12,
+      "titre": "Au café et au restaurant",
+      "titre_tr": "Kafede ve Lokantada",
+      "objectifs": [
+        "Commander à boire et à manger",
+        "Demander un prix et l'addition",
+        "Utiliser « istiyorum » et les formules de table"
+      ],
+      "vocabulaire": [
+        { "tr": "çay", "fr": "thé" },
+        { "tr": "kahve", "fr": "café" },
+        { "tr": "su", "fr": "eau" },
+        { "tr": "meyve suyu", "fr": "jus de fruit" },
+        { "tr": "ekmek", "fr": "pain" },
+        { "tr": "peynir", "fr": "fromage" },
+        { "tr": "zeytin", "fr": "olive" },
+        { "tr": "yumurta", "fr": "œuf" },
+        { "tr": "çorba", "fr": "soupe" },
+        { "tr": "tavuk", "fr": "poulet" },
+        { "tr": "pilav", "fr": "riz pilaf" },
+        { "tr": "salata", "fr": "salade" },
+        { "tr": "tatlı", "fr": "dessert ; sucré" },
+        { "tr": "şekerli / şekersiz", "fr": "avec sucre / sans sucre" },
+        { "tr": "Ne kadar?", "fr": "Combien ça coûte ?" },
+        { "tr": "Hesap, lütfen.", "fr": "L'addition, s'il vous plaît." },
+        { "tr": "Afiyet olsun!", "fr": "Bon appétit !" },
+        { "tr": "Elinize sağlık!", "fr": "Merci pour ce repas (compliment au cuisinier)" },
+        { "tr": "garson", "fr": "serveur" },
+        { "tr": "lira", "fr": "livre turque" }
+      ],
+      "grammaire": [
+        {
+          "titre": "istemek : vouloir",
+          "explication": "Au présent : istiyorum, istiyorsun, istiyor, istiyoruz, istiyorsunuz, istiyorlar. Plus poli : « … alabilir miyim? » (puis-je avoir … ?).",
+          "exemples": [
+            { "tr": "Bir çay istiyorum.", "fr": "Je voudrais un thé." },
+            { "tr": "Bir su alabilir miyim?", "fr": "Puis-je avoir une eau ?" }
+          ]
+        },
+        {
+          "titre": "Le suffixe -lı / -sız (avec / sans)",
+          "explication": "-lı/-li/-lu/-lü signifie « avec », -sız/-siz/-suz/-süz signifie « sans ».",
+          "exemples": [
+            { "tr": "şekerli kahve", "fr": "café sucré" },
+            { "tr": "sütsüz çay", "fr": "thé sans lait" },
+            { "tr": "etsiz yemek", "fr": "plat sans viande" }
+          ]
+        }
+      ],
+      "dialogue": [
+        { "locuteur": "Garson", "tr": "Hoş geldiniz! Ne alırsınız?", "fr": "Bienvenue ! Que désirez-vous ?" },
+        { "locuteur": "Müşteri", "tr": "Hoş bulduk. Bir mercimek çorbası ve bir salata istiyorum.", "fr": "Merci. Je voudrais une soupe de lentilles et une salade." },
+        { "locuteur": "Garson", "tr": "İçecek olarak ne istersiniz?", "fr": "Que voulez-vous comme boisson ?" },
+        { "locuteur": "Müşteri", "tr": "Bir su, lütfen. Sonra bir çay.", "fr": "Une eau, s'il vous plaît. Puis un thé." },
+        { "locuteur": "Garson", "tr": "Afiyet olsun!", "fr": "Bon appétit !" },
+        { "locuteur": "Müşteri", "tr": "Teşekkürler. Hesap, lütfen. Ne kadar?", "fr": "Merci. L'addition, s'il vous plaît. Combien ?" },
+        { "locuteur": "Garson", "tr": "Yüz elli lira.", "fr": "Cent cinquante livres." }
+      ],
+      "exercices": [
+        {
+          "type": "qcm",
+          "consigne": "Le serveur apporte le plat. Il dit :",
+          "options": ["Afiyet olsun!", "Güle güle!", "Hesap, lütfen!", "Günaydın!"],
+          "reponse": "Afiyet olsun!"
+        },
+        {
+          "type": "completer",
+          "consigne": "« thé sans sucre » : şeker… çay",
+          "reponse": "şekersiz çay"
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Je voudrais un café. »",
+          "reponse": "Bir kahve istiyorum."
+        },
+        {
+          "type": "traduction",
+          "consigne": "Traduisez : « Combien ça coûte ? »",
+          "reponse": "Ne kadar?"
+        }
+      ],
+      "videos": []
+    }
+  ]
+}

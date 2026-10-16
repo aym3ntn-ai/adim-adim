@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+  <application>
+    <!-- Fired by the inexact alarm: shows one review pop-up if the screen is on. -->
+    <receiver
+      android:name="expo.modules.revisionoverlay.OverlayReceiver"
+      android:exported="false" />
+
+    <!-- Alarms do not survive a restart: re-arm the schedule after boot or an update. -->
+    <receiver
+      android:name="expo.modules.revisionoverlay.BootReceiver"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
