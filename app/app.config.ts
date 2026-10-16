@@ -25,15 +25,8 @@ const config: ExpoConfig = {
     permissions: ['android.permission.SYSTEM_ALERT_WINDOW', 'android.permission.RECEIVE_BOOT_COMPLETED'],
     blockedPermissions: ['android.permission.READ_EXTERNAL_STORAGE', 'android.permission.WRITE_EXTERNAL_STORAGE'],
   },
-  web: {
-    bundler: 'metro',
-    output: 'single',
-    name: 'Adım Adım — turc A1.1',
-    shortName: 'Adım Adım',
-    lang: 'fr',
-    themeColor: '#1F4E8C',
-    backgroundColor: '#F6F3EE',
-  },
+  // Name, colors and icons of the installable site live in public/manifest.webmanifest.
+  web: { bundler: 'metro', output: 'single' },
   plugins: [
     'expo-router',
     'expo-font',

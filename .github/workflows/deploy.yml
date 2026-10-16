@@ -37,9 +37,18 @@ jobs:
 
       - name: Check the app
         run: |
-          npm run typecheck --workspace app
-          npm run lint --workspace app
-          npm test --workspace app
+          # Each failure is also raised as an annotation, readable from the run page.
+          check() {
+            if ! out=$("$@" 2>&1); then
+              echo "$out"
+              echo "$out" | grep -E "error|Error|✖|not ok|fail" | head -20 | while IFS= read -r line; do echo "::error title=$3::$line"; done
+              return 1
+            fi
+            echo "$out" | tail -5
+          }
+          check npm run typecheck --workspace app
+          check npm run lint --workspace app
+          check npm test --workspace app
 
       - name: Build the web app
         working-directory: app
